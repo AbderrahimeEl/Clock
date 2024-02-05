@@ -1,0 +1,65 @@
+:root {
+  --colorPrimary: #8dc3e0;
+}
+html {
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+  background: linear-gradient(to right, red, #66ccff);
+}
+body {
+  margin: 0;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+.c {
+  width: 300px;
+  height: 300px;
+  border: 10px solid rgb(255, 255, 255);
+  background-color: var(--colorPrimary);
+  border-radius: 15px;
+  margin: 50px auto;
+  margin-top: -100px;
+  position: relative;
+}
+.clock {
+  border-radius: 50%;
+}
+.arrow {
+  width: 50%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.751);
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 0.34, 1, 2.5);
+  border-radius: 10px;
+}
+.hour {
+  width: 30%;
+  left: 60px;
+}
+.min {
+  width: 40%;
+  left: 30px;
+}
+.currenttime {
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  top: 400px;
+  left: calc(50% - 90px);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-weight: bold;
+  padding-top: 12px;
+  font-size: 30px;
+  background-color: var(--colorPrimary);
+  color: rgba(0, 0, 0, 0.751);
+  font-family: "Arial", sans-serif;
+}

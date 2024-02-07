@@ -1,12 +1,12 @@
 :root {
-  --colorPrimary: #8dc3e0;
+  --colorPrimary: #bfc8cd;
 }
 html {
   background-size: cover;
   font-family: "helvetica neue";
   text-align: center;
   font-size: 10px;
-  background: linear-gradient(to right, red, #66ccff);
+  background: linear-gradient(to right, rgba(255, 0, 187, 0.669), #66ccff93);
 }
 body {
   margin: 0;
@@ -48,13 +48,13 @@ body {
   width: 40%;
   left: 30px;
 }
-.currenttime {
-  width: 180px;
+.time {
+  width: 300px;
   height: 50px;
   position: absolute;
   top: 400px;
-  left: calc(50% - 90px);
-  border: 5px solid rgb(255, 255, 255);
+  left: calc(50% - 150px);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 10px;
   font-weight: bold;
   padding-top: 12px;
@@ -62,4 +62,40 @@ body {
   background-color: var(--colorPrimary);
   color: rgba(0, 0, 0, 0.751);
   font-family: "Arial", sans-serif;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#timer {
+  font-size: 24px;
+  margin: 20px 0;
+}
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+ #resetButton{
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+.recorded{
+  font-style: italic;
+  font-size: 20px;
+}
+.timei{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin:0 auto ;
+}
+.num {
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-right: 10px;
 }

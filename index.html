@@ -4,21 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="clock-logo.webp" type="image/png">
+    <link rel="icon" href="/images/clock-logo.webp" type="image/png">
     <title>Clock</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
 </head>
 
 <body>
+    <div class="c timer">
+        <div class="buttons">
+            <img src="images/play.png" alt="play Timer" id="playButton" onclick="startTimer()">
+            <img src="images/record.png" alt="Record Value" id="recordButton" onclick="recordValue()" width="60px">
+        </div>
+        <div class="time R">
+            <span class="hourR">00</span> :
+            <span class="minuteR">00</span> :
+            <span class="secondR">00</span> :
+            <span class="centisecondR">00</span>
+        </div>
+        <div class="timei">
+        </div>
+    </div>
     <div class="c clock">
         <div class="arrow hour"></div>
         <div class="arrow min"></div>
         <div class="arrow second"></div>
-        <div class="currenttime">
+        <div class="time current">
             <span class="hourN">00</span> :
             <span class="minuteN">00</span> :
-            <span class="secondN">00</span>
+            <span class="secondN">00</span> :
+            <span class="centisecondN">00</span>
         </div>
     </div>
 </body>

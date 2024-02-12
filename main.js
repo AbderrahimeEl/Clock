@@ -25,6 +25,10 @@ function setDate() {
   hourN.textContent = hour >= 10 ? hour : "0" + hour;
   milSeconds.textContent = milliseconds.toFixed(0);
   milliseconds >= 10 ? milliseconds.toFixed(0) : "0" + milliseconds.toFixed(0);
+  const audio = document.querySelector(`audio`);
+  audio.play();
+  key.classList.add("playing");
+
 }
 setInterval(setDate, 10);
 
@@ -50,6 +54,7 @@ function displayTime(milliseconds) {
   hourR.textContent = hours >= 10 ? hours : "0" + hours;
   let centisecondR = document.querySelector(".centisecondR");
   centisecondR.textContent = centiseconds >= 10 ? centiseconds : "0" + centiseconds;
+
 }
 
 function startTimer() {
@@ -60,6 +65,8 @@ function startTimer() {
     document.images[1].onclick = recordValue;
     startTime = new Date().getTime() - elapsedTime;
     intervalId = setInterval(updateTimer, 10);
+
+
   }
 }
 
